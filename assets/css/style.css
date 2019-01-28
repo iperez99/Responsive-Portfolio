@@ -32,9 +32,9 @@ header h1{
  
 }
 
-#top {
+/* #top {
   padding:inherit;
-}
+} */
 
 nav {
   float: right;
@@ -57,7 +57,7 @@ a {
 .main{
   width:960px;
   margin:0 auto;
-  padding:10px;
+  padding:0px;
   background-color: #ffffff;
   overflow:auto;
 }
@@ -75,7 +75,7 @@ p{
   color: #4aaaa5;
   margin-bottom: 15px;
   border-bottom: 1px solid #cccccc;
-  padding: 10px 0px 10px 0px;
+  padding: 10px 0px 10px 10px;
 }
 
 
@@ -164,12 +164,68 @@ h3 {
 
 footer {
   text-align: center;
+  color: #cccccc;
   background-color: #666666;
   width: 100%;
   border-top: 8px solid #4aaaa5;
-  padding: 25px 25px 5px 25px;
-  position: absolute;
+  padding: 25px;
+  position: fixed;
   bottom: 0;
 
 }
 
+@media screen and (max-width:980px){
+
+.main-container{
+  width: 67%;
+  margin: 50px;
+  padding: 20px;
+}
+.portfolio{
+  width: 35%;
+  margin: 15px;
+  padding: 90px 90px;
+}
+
+#content{
+  width: 50%;
+}
+
+
+}
+/* @media screen and (max-width:768px){
+ #content{
+   width:865px;
+ }
+
+#p2, #p4,{
+  float: none;
+}
+} */
+/* @media screen and (max-width:640px){
+  header{
+    position: static;
+    width: 640px;
+   
+}
+  h1{
+    width: 640px;
+  }
+  nav{ 
+    float: none;
+    text-align: center;
+  }
+
+  .main{
+    width: 640px;
+    margin: 8px;
+    padding: 0px;
+  }
+
+  .main-container{
+    width: 80%;
+    margin: 50px;
+    padding: 20px;
+  }
+
+} */
